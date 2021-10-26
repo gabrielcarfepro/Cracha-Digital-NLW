@@ -88,3 +88,14 @@ ul {
 
   justify-content: center; /* Justifica os elementos no centro (Liberado pelo flex)*/
 }
+
+li {
+  transition: 1s;
+}
+
+li:hover,
+li:focus {
+  transition: 0.3s;
+  transform: translateY(-0.4rem) scale(1.2);
+  /*&clip-path: circle(50% at 50% 50%);*/
+}
