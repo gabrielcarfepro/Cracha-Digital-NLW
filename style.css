@@ -20,9 +20,12 @@ body {
 }
 
 main {
-  background: url(images/background.svg);
-  width: 375px;
-  height: 812px;
+  background: url(images/background.svg) no-repeat center/cover;
+  width: 100vw;
+  min-height: 812px;
+  height: 100vh;
+  /*width: 375px;*/
+  /*height: 812px;*/
 }
 
 .container {
@@ -89,13 +92,29 @@ ul {
   justify-content: center; /* Justifica os elementos no centro (Liberado pelo flex)*/
 }
 
-li {
-  transition: 1s;
-}
+/* brakepoints e at rule
+@media(min-width: 720px) {
+  estilos versão tablet
+}*/
 
-li:hover,
-li:focus {
-  transition: 0.3s;
-  transform: translateY(-0.4rem) scale(1.2);
-  /*&clip-path: circle(50% at 50% 50%);*/
+@media (min-width: 960px) {
+  main {
+    background: url(images/background.svg) no-repeat center;
+    width: 100vw;
+    min-height: 812px;
+    height: 100vh;
+    /*width: 375px;*/
+    /*height: 812px;*/
+  }
+
+  li {
+    transition: 1s;
+  }
+
+  li:hover,
+  li:focus {
+    transition: 0.3s;
+    transform: translateY(-0.4rem) scale(1.2);
+    /*&clip-path: circle(50% at 50% 50%);*/
+  }
 }
