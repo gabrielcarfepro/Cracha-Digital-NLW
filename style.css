@@ -80,6 +80,16 @@ p {
   margin-top: 2rem;
 }
 
+#seloRocketseat {
+  animation: rotation 30s infinite;
+}
+
+@keyframes rotation {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
 ul {
   margin-top: 4rem;
 
